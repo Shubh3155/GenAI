@@ -1,0 +1,96 @@
+# Retrieval-Augmented Generation (RAG)
+
+## What is RAG?
+
+Retrieval-Augmented Generation (RAG) is a technique that combines:
+
+- **Information Retrieval**
+- **Generative AI Models**
+
+to generate more accurate and context-aware responses.
+
+Instead of relying only on the knowledge already stored inside a Large Language Model (LLM), RAG first retrieves relevant information from external documents or databases and then provides that information to the model before generating an answer.
+
+---
+
+## How RAG Works
+
+### 1. Document Loading
+Documents such as PDFs, text files, or webpages are loaded into the system.
+
+### 2. Text Chunking
+Large documents are divided into smaller chunks for efficient searching.
+
+### 3. Embedding Generation
+Each chunk is converted into vector embeddings using embedding models.
+
+### 4. Vector Storage
+The embeddings are stored inside a vector database like:
+- FAISS
+- ChromaDB
+- Pinecone
+
+### 5. Query Processing
+When a user asks a question, the query is also converted into embeddings.
+
+### 6. Similarity Search
+The system searches the vector database to retrieve the most relevant chunks.
+
+### 7. Response Generation
+The retrieved context is sent to the LLM, which generates a context-aware answer.
+
+---
+
+## Advantages of RAG
+
+- Reduces hallucinations
+- Provides up-to-date information
+- Works with private/custom data
+- Improves answer accuracy
+- Scales efficiently for large knowledge bases
+
+---
+
+## Technologies Commonly Used in RAG
+
+| Component | Examples |
+|----------|----------|
+| LLMs | Gemini, GPT, Llama |
+| Embeddings | OpenAI Embeddings, Gemini Embeddings |
+| Vector DB | FAISS, Pinecone, ChromaDB |
+| Frameworks | LangChain, LlamaIndex |
+
+---
+
+## Applications of RAG
+
+- ChatPDF systems
+- AI assistants
+- Enterprise search
+- Research assistants
+- Customer support bots
+- Medical document analysis
+
+---
+
+## Basic RAG Architecture
+
+```text
+User Query
+     ↓
+Embedding Model
+     ↓
+Vector Search
+     ↓
+Relevant Context Retrieved
+     ↓
+LLM + Context
+     ↓
+Generated Response
+```
+
+---
+
+## Conclusion
+
+RAG enhances Large Language Models by giving them access to external knowledge sources. It is one of the most important architectures used in modern AI applications for building reliable and context-aware systems.
