@@ -1,0 +1,125 @@
+# AI Resume Analyzer
+
+## What is AI Resume Analyzer?
+
+AI Resume Analyzer is a Generative AI-based application that analyzes resumes using Large Language Models (LLMs) and Natural Language Processing (NLP).
+
+The system helps users improve their resumes by:
+- Extracting important information
+- Evaluating ATS compatibility
+- Identifying missing skills
+- Suggesting improvements
+- Generating interview questions
+
+Instead of manually reviewing resumes, the AI automates the analysis process and provides intelligent recommendations.
+
+---
+
+## How AI Resume Analyzer Works
+
+### 1. Resume Upload
+The user uploads a resume in PDF format.
+
+### 2. Text Extraction
+The system extracts text from the uploaded resume using PDF parsers.
+
+### 3. Text Chunking
+The resume content is divided into smaller chunks for processing.
+
+### 4. Embedding Generation
+The chunks are converted into vector embeddings using embedding models.
+
+### 5. AI Analysis
+The Large Language Model analyzes:
+- Skills
+- Experience
+- Education
+- Projects
+- Resume formatting
+
+### 6. ATS Scoring
+The system evaluates how ATS-friendly the resume is.
+
+### 7. Recommendation Generation
+The AI provides:
+- Improvement suggestions
+- Missing keywords
+- Better project descriptions
+- Resume optimization tips
+
+### 8. Interview Question Generation
+The system generates technical and HR interview questions based on the resume.
+
+---
+
+## Advantages of AI Resume Analyzer
+
+- Saves time in resume review
+- Improves ATS compatibility
+- Identifies missing skills
+- Provides personalized suggestions
+- Helps in placement preparation
+- Automates resume screening
+
+---
+
+## Technologies Commonly Used
+
+| Component | Examples |
+|----------|----------|
+| LLMs | Gemini, GPT, Llama |
+| Embeddings | OpenAI Embeddings, Gemini Embeddings |
+| Vector DB | FAISS, Pinecone, ChromaDB |
+| Frameworks | LangChain, LlamaIndex |
+| Frontend | Streamlit |
+| Backend | Python |
+
+---
+
+## Applications of AI Resume Analyzer
+
+- Resume Screening
+- Placement Preparation
+- Recruitment Automation
+- Career Guidance
+- ATS Optimization
+- Interview Preparation
+
+---
+
+## Basic System Architecture
+
+```text
+Resume PDF
+     ↓
+Text Extraction
+     ↓
+Text Chunking
+     ↓
+Embedding Generation
+     ↓
+Vector Storage
+     ↓
+LLM Analysis
+     ↓
+ATS Score + Suggestions
+     ↓
+Interview Question Generation
+```
+
+---
+
+## Future Improvements
+
+- Job Description Matching
+- LinkedIn Profile Analysis
+- AI-generated Cover Letters
+- Resume Ranking System
+- Voice Interview Simulation
+- Multi-language Resume Support
+
+---
+
+## Conclusion
+
+AI Resume Analyzer demonstrates how Generative AI and NLP can automate resume analysis and improve candidate preparation for placements and interviews. It combines document processing, vector search, and Large Language Models to provide intelligent career assistance.
